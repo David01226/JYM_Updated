@@ -70,7 +70,7 @@ a {
 .header-homepage-right a {
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 28px;
     margin-left: 35px;
 }
 
@@ -135,7 +135,7 @@ a {
 
 .contact-info-container p{
     color: white;
-    font-size: 25px;
+    font-size: 24px;
     line-height: 30px;
     font-weight: 400;
 }
@@ -165,7 +165,7 @@ a {
 
 .contact p {
     color: white;
-    font-size: 25px;
+    font-size: 24px;
     line-height: 30px;
     font-weight: 400;
 }
@@ -250,7 +250,7 @@ input[type="text"] {
     border: none;
     border-radius: 10px;
     margin-bottom: 18px;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 400;
     padding: 15px;
 }
@@ -261,7 +261,7 @@ select {
     border: none;
     border-radius: 10px;
     margin-bottom: 18px;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 400;
     padding: 15px;
     background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #DBE0EB;
@@ -284,7 +284,7 @@ textarea {
     border: none;
     border-radius: 10px;
     margin-bottom: 25px;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 400;
     padding: 15px;
 }

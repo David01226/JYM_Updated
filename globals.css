@@ -136,7 +136,7 @@ body {
     height: 80px;
     background-color: #FFCB08;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -212,6 +212,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-top: 1px solid #013220;
 }
 
 .partners-text {
