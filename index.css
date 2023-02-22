@@ -37,37 +37,7 @@
 }
 
 
-/* Header */
 
-.header-homepage {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    height: 200px;
-    z-index: 10;
-}
-
-.header-homepage-wrapper {
-    width: 90%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.header-homepage-right a {
-    text-decoration: none;
-    color: white;
-    font-size: 28px;
-    margin-left: 35px;
-}
 
 
 /* Hero-Text */
@@ -110,9 +80,11 @@
 
 /* Hero */
 
+
+
 #hero-slideshow {
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .splide__track {
@@ -120,10 +92,68 @@
     height: 100%;
 }
 
-.splide__slide img {
+.splide__list {
     width: 100%;
     height: 100%;
 }
+
+.splide__slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-1, .hero-2, .hero-3, .hero-4, .hero-5, .hero-5, .hero-6, .hero-7, .hero-8, .hero-9, .hero-10, .hero-11 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-1 {
+    background-image: url(img/homepage/green_coast_solar.png); 
+}
+.hero-2 {
+    background-image: url(img/homepage/commercial_solar_flat_roof.png);
+}
+.hero-3 {
+    background-image: url(img/homepage/Hero_1.jpg); 
+}
+.hero-4 {
+    background-image: url(img/homepage/James_roofing.png);
+}
+.hero-5 {
+    background-image: url(img/homepage/flat_solar_green_estate.png); 
+}
+.hero-6 {
+    background-image: url(img/homepage/coastal_solar.png);
+}
+.hero-7 {
+    background-image: url(img/homepage/seaside_solar.png); 
+}
+.hero-8 {
+    background-image: url(img/homepage/sunset-solar.png);
+}
+.hero-9 {
+    background-image: url(img/homepage/Hero_2.jpg); 
+}
+.hero-10 {
+    background-image: url(img/homepage/autumn_roofing.png);
+}
+.hero-11 {
+    background-image: url(img/homepage/Hero_4.jpg);
+}
+
+
 
 .zoom-out {
     width: 100%;
@@ -141,3 +171,56 @@
         transform: scale(1);
     }
 } 
+
+
+
+/* Breakpoints */
+
+@media screen and (min-width: 2240px) {
+    
+
+    .hero-text-bottom {
+        bottom: 7%;
+    }
+
+    .hero-text-top h1 {
+        font-size: 140px;
+    }
+
+    .hero-text-bottom h3 {
+        font-size: 70px;
+    }
+    
+}
+
+
+@media screen and (max-width: 1600px) {
+    
+
+    .hero-text-top h1 {
+        font-size: 70px;
+    }
+
+    .hero-text-bottom h3 {
+        font-size: 35px;
+    }
+    
+}
+
+
+@media screen and (max-width: 1000px) {
+    
+
+    .hero-text-top h1 {
+        font-size: 52px;
+    }
+
+    .hero-text-bottom {
+        bottom: 6%;
+    }
+
+    .hero-text-bottom h3 {
+        font-size: 26px;
+    }
+    
+}

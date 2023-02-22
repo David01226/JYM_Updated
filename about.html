@@ -16,6 +16,16 @@
     <!-- Scroll Menu -->
     <script src="scroll-menu.js"></script>
 
+    <!-- Refreshes page to the top on reload -->
+    <script>
+        window.onunload = function () {
+            window.scrollTo(0, 0)
+        }
+    </script>
+
+    <!-- Animations -->
+    <script src="animations.js"></script>
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +47,7 @@
 
 
         <!-- Header -->
-        <section class="header-homepage">
+        <section class="header-homepage smallHeroFade">
             <div class="header-homepage-wrapper">
                 <div class="header-homepage-left">
                     <a href="index.html"><img id="header-logo" src="img/global/jymlogo.png" alt=""></a>
@@ -71,16 +81,16 @@
 
         <!-- Quick-Contact-Links -->
         <section class="quick-contact-links">
-            <div class="quick-phone">
+            <div class="quick-phone quickForm">
                 <img src="img/global/quickPhone.png" alt="">
                 <a href="tel:07712708557"><p class="quick-text-phone">Call Us</p></a>
                 
             </div>
-            <div class="quick-email">
+            <div class="quick-email quickForm">
                 <img src="img/global/quickMail.png" alt="">
                 <a href="mailto: jymroofing@gmail.com"><p class="quick-text-email">Email Us</p></a>
             </div>
-            <div class="quick-form">
+            <div class="quick-form quickForm">
                 <img src="img/global/quickForm.png" alt="">
                 <a href="contact.html"><p class="quick-text-form">Enquire Now</p></a>
             </div>
@@ -88,7 +98,7 @@
 
         <!-- Small Hero -->
 
-        <section class="small-hero-container">
+        <section class="small-hero-container smallHeroFade">
             <img src="img/aboutpage/cardImage.png" alt="">
             <div class="small-hero-overlay">
                 <h1>About JYM</h1>
@@ -100,7 +110,7 @@
         <!-- About Content -->
 
         <section class="about-container">
-            <div class="about-text">
+            <div class="about-text fade-in">
                 <div class="about-text-top">
                     <p>We are a construction company specialising in roofing, solar panel installation and property maintenance. Our team is made up of 8 highly skilled tradesmen who have experience providing a range of services within the construction industry.</p>
                 </div>
@@ -110,15 +120,15 @@
             </div>
 
             <div class="about-images">
-                <img src="img/aboutpage/Image 9.png" alt="">
-                <img src="img/aboutpage/img17.png" alt="">
+                <img class="fadeLeft" src="img/aboutpage/Image 9.png" alt="">
+                <img class="fadeRight" src="img/aboutpage/img17.png" alt="">
             </div>
 
             <div class="meet-team-container">
-                <div class="meet-header">
+                <div class="meet-header fade-in">
                     <h1>Meet the Team</h1>
                 </div>
-                <div class="meet-img-row-top">
+                <div class="meet-img-row-top fade-in">
                     <div class="person">
                         <img src="img/aboutpage/Group 32.png" alt="">
                         <h3>James</h3>
@@ -130,7 +140,7 @@
                         <p>Co-Founder</p>
                     </div>
                 </div>
-                <div class="meet-img-row">
+                <div class="meet-img-row fadeLeftQuick">
                     <div class="person">
                         <img src="img/aboutpage/Group 32.png" alt="">
                         <h3>Nathan</h3>
@@ -147,7 +157,7 @@
                         <p>Roofing/Solar Installation</p>
                     </div>
                 </div>
-                <div class="meet-img-row">
+                <div class="meet-img-row fadeRightQuick">
                     <div class="person">
                         <img src="img/aboutpage/Group 32.png" alt="">
                         <h3>Steve</h3>
@@ -164,7 +174,7 @@
                         <p>Roofing/Solar Installation</p>
                     </div>
                 </div>
-                <div class="meet-img-row-top">
+                <div class="meet-img-row-top fade-in">
                     <div class="person">
                         <img src="img/aboutpage/Group 32.png" alt="">
                         <h3>Isaac</h3>
@@ -188,8 +198,8 @@
         </section>
 
         <!-- JYM background decoration -->
-        <div class="greenline"></div>
-        <div class="goldline"></div>
+        <div id="backgroundDecFade" class="greenline"></div>
+        <div id="backgroundDecFade" class="goldline"></div>
         <img class="jym-logo-decoration" src="img/global/jymlogo.png" alt="">
         <img class="jym-logo-decoration-second" src="img/global/jymlogo.png" alt="">
 

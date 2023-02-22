@@ -21,6 +21,9 @@
     <!-- Header-fade-down -->
     <script src="header-fade-down.js"></script>
 
+    <!-- Animations -->
+    <script src="animations.js"></script>
+
     <!-- Splide -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
@@ -34,10 +37,10 @@
 
 
         <!-- Header -->
-        <section class="header-homepage">
+        <section class="header-homepage headerFadeDown">
             <div class="header-homepage-wrapper">
                 <div class="header-homepage-left">
-                    <a href="index.html"><img id="header-logo" src="img/global/jymlogo.png" alt=""></a>
+                    <a class="fadeHeader" href="index.html"><img id="header-logo" src="img/global/jymlogo.png" alt=""></a>
                 </div>
                 <div class="header-homepage-right">
                     <a href="index.html">HOME</a>
@@ -52,16 +55,16 @@
 
         <!-- Quick-Contact-Links -->
         <section class="quick-contact-links">
-            <div class="quick-phone">
+            <div class="quick-phone quickPhone">
                 <img src="img/global/quickPhone.png" alt="">
                 <a href="tel:07712708557"><p class="quick-text-phone">Call Us</p></a>
                 
             </div>
-            <div class="quick-email">
+            <div class="quick-email quickEmail">
                 <img src="img/global/quickMail.png" alt="">
                 <a href="mailto: jymroofing@gmail.com"><p class="quick-text-email">Email Us</p></a>
             </div>
-            <div class="quick-form">
+            <div class="quick-form quickForm">
                 <img src="img/global/quickForm.png" alt="">
                 <a href="contact.html"><p class="quick-text-form">Enquire Now</p></a>
             </div>
@@ -69,7 +72,7 @@
 
 
         <!-- Hero-Text -->
-        <section class="hero-text">
+        <section class="hero-text fadeLeft">
             <div class="hero-text-top">
                 <h1>Roofing &</h1>
                 <h1>Solar Installation</h1>
@@ -88,44 +91,49 @@
             <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <img class="zoom-out" src="img/homepage/green_coast_solar.png" alt="">
+                            <!-- <img class="zoom-out" src="img/homepage/green_coast_solar.png" alt=""> -->
+                            <div class="hero-1 zoom-out"></div>
                         </li>
                         <li class="splide__slide">
-                            <img class="zoom-out" src="img/homepage/commercial_solar_flat_roof.png" alt="">
+                            <!-- <img class="zoom-out" src="img/homepage/commercial_solar_flat_roof.png" alt=""> -->
+                            <div class="hero-2 zoom-out"></div>
                         </li>
                         <li class="splide__slide">
-                            <img class="zoom-out" src="img/homepage/Hero_1.jpg" alt="">
+                            <!-- <img class="zoom-out" src="img/homepage/Hero_1.jpg" alt=""> -->
+                            <div class="hero-3 zoom-out"></div>
                         </li>
                         <li class="splide__slide">
-                            <img class="zoom-out" src="img/homepage/James_roofing.png" alt="">
+                            <!-- <img class="zoom-out" src="img/homepage/James_roofing.png" alt=""> -->
+                            <div class="hero-4 zoom-out"></div>
                         </li>
                         <li class="splide__slide">
-                            <img class="zoom-out" src="img/homepage/flat_solar_green_estate.png" alt="">
+                            <!-- <img class="zoom-out" src="img/homepage/flat_solar_green_estate.png" alt=""> -->
+                            <div class="hero-5 zoom-out"></div>
                         </li>
                         <li class="splide__slide">
-                            <img class="zoom-out" src="img/homepage/coastal_solar.png" alt="">
-                        </li>
-                        <!-- <li class="splide__slide">
-                            <img class="zoom-out" src="img/homepage/Hero_6.jpg" alt="">
-                        </li> -->
-                        <li class="splide__slide">
-                            <img class="zoom-out" src="img/homepage/seaside_solar.png" alt="">
+                            <!-- <img class="zoom-out" src="img/homepage/coastal_solar.png" alt=""> -->
+                            <div class="hero-6 zoom-out"></div>
                         </li>
                         <li class="splide__slide">
-                            <img class="zoom-out" src="img/homepage/sunset-solar.png" alt="">
+                            <!-- <img class="zoom-out" src="img/homepage/seaside_solar.png" alt=""> -->
+                            <div class="hero-7 zoom-out"></div>
                         </li>
                         <li class="splide__slide">
-                            <img class="zoom-out" src="img/homepage/Hero_2.jpg" alt="">
+                            <!-- <img class="zoom-out" src="img/homepage/sunset-solar.png" alt=""> -->
+                            <div class="hero-8 zoom-out"></div>
                         </li>
                         <li class="splide__slide">
-                            <img class="zoom-out" src="img/homepage/autumn_roofing.png" alt="">
+                            <!-- <img class="zoom-out" src="img/homepage/Hero_2.jpg" alt=""> -->
+                            <div class="hero-9 zoom-out"></div>
                         </li>
                         <li class="splide__slide">
-                            <img class="zoom-out" src="img/homepage/Hero_4.jpg" alt="">
+                            <!-- <img class="zoom-out" src="img/homepage/autumn_roofing.png" alt=""> -->
+                            <div class="hero-10 zoom-out"></div>
                         </li>
-                        <!-- <li class="splide__slide">
-                            <img class="zoom-out" src="img/homepage/Hero_5.jpg" alt="">
-                        </li> -->
+                        <li class="splide__slide">
+                            <!-- <img class="zoom-out" src="img/homepage/Hero_4.jpg" alt=""> -->
+                            <div class="hero-11 zoom-out"></div>
+                        </li>
                         
                     </ul>
             </div>
@@ -160,7 +168,7 @@
                   jQuery('#hero-slideshow .splide__slide:nth-of-type(' + (destIndex + 1) + ') .zoom-out').css('animation','none')
 
                   setTimeout(function(){
-                        jQuery('#hero-slideshow .splide__slide:nth-of-type(' + (destIndex + 1) + ') img').css('animation', '')
+                        jQuery('#hero-slideshow .splide__slide:nth-of-type(' + (destIndex + 1) + ') div').css('animation', '')
                   }, 10);    
             } );
         </script>

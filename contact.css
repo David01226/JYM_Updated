@@ -46,7 +46,9 @@ a {
 
 /* Header */
 
+
 .header-homepage {
+    position: unset;
     display: flex;
     flex-direction: row;
     justify-content: center;

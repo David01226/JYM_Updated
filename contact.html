@@ -16,6 +16,16 @@
     <!-- Scroll Menu -->
     <script src="scroll-menu.js"></script>
 
+    <!-- Animations -->
+    <script src="animations.js"></script>
+
+    <!-- Refreshes page to the top on reload -->
+    <script>
+        window.onunload = function () {
+            window.scrollTo(0, 0)
+        }
+    </script>
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +46,7 @@
 
         <!-- Header -->
         <section class="header-homepage">
-            <div class="header-homepage-wrapper">
+            <div class="header-homepage-wrapper headerFadeDown">
                 <div class="header-homepage-left">
                     <a href="index.html"><img id="header-logo" src="img/global/jymlogo.png" alt=""></a>
                 </div>
@@ -71,16 +81,16 @@
 
         <!-- Quick-Contact-Links -->
         <section class="quick-contact-links">
-            <div class="quick-phone">
+            <div class="quick-phone quickForm">
                 <img src="img/global/quickPhone.png" alt="">
                 <a href="tel:07712708557"><p class="quick-text-phone">Call Us</p></a>
                 
             </div>
-            <div class="quick-email">
+            <div class="quick-email quickForm">
                 <img src="img/global/quickMail.png" alt="">
                 <a href="mailto: jymroofing@gmail.com"><p class="quick-text-email">Email Us</p></a>
             </div>
-            <div class="quick-form">
+            <div class="quick-form quickForm">
                 <img src="img/global/quickForm.png" alt="">
                 <a href="contact.html"><p class="quick-text-form">Enquire Now</p></a>
             </div>
@@ -91,7 +101,7 @@
         <section class="contact-content">
             <div class="contact-top">
                 <div class="contact-top-left">
-                    <div class="contact-info-container">
+                    <div class="contact-info-container fadeLeft">
                         <h1>Contact us</h1>
                         <h3>Interested in a free quote?</h3>
                         <p>Please contact us either using the information below, or by using the form to request a call-back. We look forward to hearing from you!</p>
@@ -123,7 +133,7 @@
                 </div>
 
                 <div class="contact-top-right">
-                    <div class="call-back-container">
+                    <div class="call-back-container fadeRight">
                         <h3>REQUEST A CALLBACK</h3>
                         <!-- Form -->
                         <form class="form-wrapper" action="" method="POST">
@@ -156,11 +166,11 @@
 
             <div class="contact-bottom">
                 <div class="contact-bottom-left">
-                    <div class="contact-map-container">
+                    <div class="contact-map-container fade-in">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7143.903718940593!2d-1.8689836864329012!3d50.724551418304905!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeb6aaf98b8877e94!2zNTDCsDQzJzI0LjIiTiAxwrA1MSc1My44Ilc!5e0!3m2!1sen!2suk!4v1676275674700!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <div class="contact-bottom-right">
+                <div class="contact-bottom-right fadeRight">
                     <h3>We are based in <span><strong>Bournemouth</strong></span>, BUT operate <strong>nationwide</strong>.</h3>
                     <h3><strong>Get in touch now</strong> to discuss the requirements and location of your job.</h3>
                 </div>
