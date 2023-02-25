@@ -36,9 +36,6 @@
 }
 
 
-
-
-
 /* Splide Image Carousel */
 
 .splide {
@@ -57,6 +54,34 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+
+
+
+/* Breakpoints */
+
+@media screen and (min-width: 2240px) {
+    
+}
+
+
+@media screen and (max-width: 1600px) {
+    
+}
+
+
+@media screen and (max-width: 1000px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+
+@media screen and (max-width: 550px) {
+
 }
 
 

@@ -201,6 +201,10 @@
         font-size: 70px;
     }
 
+    .hero-text.fadeLeft.appear {
+        bottom: 6%;
+    }
+
     .hero-text-bottom h3 {
         font-size: 35px;
     }
@@ -224,3 +228,60 @@
     }
     
 }
+
+@media screen and (max-width: 600px) {
+
+    .header-homepage.headerFadeDown.appear, .header-homepage.smallHeroFade.appear {
+        height: 90px;
+    }
+
+    .hero-text-top h1 {
+        font-size: 38px;
+    }
+
+    .hero-text.fadeLeft.appear {
+        bottom: 4%;
+    }
+
+    .hero-text-bottom h3 {
+        font-size: 20px;
+    }
+    
+    .hero-1 {
+        background-image: url(img/homepage/green_coast_solar-mobile.png); 
+    }
+    .hero-2 {
+        background-image: url(img/homepage/commercial_solar_flat_roof-mobile.png);
+    }
+    .hero-3 {
+        background-image: url(img/homepage/Hero_1-mobile-2.png); 
+    }
+    .hero-4 {
+        background-image: url(img/homepage/James_roofing-mobile.png);
+    }
+    .hero-5 {
+        background-image: url(img/homepage/flat_solar_green_estate-mobile.png); 
+    }
+    .hero-6 {
+        background-image: url(img/homepage/coastal_solar-mobile.png);
+    }
+    .hero-7 {
+        background-image: url(img/homepage/seaside_solar-mobile.png); 
+    }
+    .hero-8 {
+        background-image: url(img/homepage/sunset-solar-mobile.png);
+    }
+    .hero-9 {
+        background-image: url(img/homepage/Hero_2-mobile.png); 
+    }
+    .hero-10 {
+        background-image: url(img/homepage/autumn_roofing-mobile.png);
+    }
+    .hero-11 {
+        background-image: url(img/homepage/Hero_4-mobile.png);
+    }
+    
+    
+}
+
+

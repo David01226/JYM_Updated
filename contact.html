@@ -19,6 +19,9 @@
     <!-- Animations -->
     <script src="animations.js"></script>
 
+    <!-- Mobile Menu -->
+    <script src="mobile-menu.js"></script>
+
     <!-- Refreshes page to the top on reload -->
     <script>
         window.onunload = function () {
@@ -31,10 +34,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-
-    <!-- Splide -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
 </head>
 
 
@@ -57,6 +56,9 @@
                     <a href="ourwork.html">OUR WORK</a>
                     <a href="contact.html">CONTACT</a>
                 </div>
+                <div id="hamburger-menu" class="hamburger-menu">
+                    <img src="img/global/hamburger.png" alt="">
+                </div>
             </div>
         </section>
 
@@ -73,11 +75,35 @@
                         <a href="ourwork.html">OUR WORK</a>
                         <a href="contact.html">CONTACT</a>
                     </div>
+                    <divv id="scroll-hamburger-menu" class="scroll-hamburger-menu">
+                        <img src="img/global/hamburger.png" alt="">
+                    </div>
                 </div>
         </section>
 
         <!-- Linear-Gradient-transition -->
         <div class="linear-fade"></div>
+
+        <!-- Mobile-Menu -->
+        <aside class="mobile-menu-container">
+            <div class="mobile-menu-top">
+                <img class="close-mobile-menu" src="img/global/close-icon.png" alt="">
+            </div>
+            <div class="mobile-menu-links">
+                <a href="about.html">About us</a>
+                <a href="services.html">Services</a>
+                <a href="ourwork.html">Our Work</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="mobile-menu-bottom">
+                <a href="https://www.instagram.com/jymroofinglimited/" target="_blank"><img src="img/global/insta-green.png" alt=""></a>
+                <a href="https://www.linkedin.com/company/jym-roofing-and-maintenance/" target="_blank"><img src="img/global/insta-green.png" alt=""></a>
+            </div>
+        </aside>
+
+        <!-- Backdrop -->
+
+        <div class="backdrop"></div>
 
         <!-- Quick-Contact-Links -->
         <section class="quick-contact-links">
@@ -219,12 +245,12 @@
                 <div class="footer-links">
                     <div class="footer-links-left">
                         <a href="about.html">About us</a>
-                        <a href="service.html">Services</a>
+                        <a href="services.html">Services</a>
                         <a href="contact.html">Contact us</a>
                     </div>
                     <div class="footer-links-right">
-                        <a href="https://www.instagram.com/jymroofinglimited/" target="_blank"><img src="img/global/icons8-instagram.png" alt=""></a>
-                        <a href="https://www.linkedin.com/company/jym-roofing-and-maintenance/" target="_blank"><img src="img/global/linkedin.png" alt=""></a>
+                        <a href="https://www.instagram.com/jymroofinglimited/" target="_blank"><img src="img/global/insta-white.png" alt=""></a>
+                        <a href="https://www.linkedin.com/company/jym-roofing-and-maintenance/" target="_blank"><img src="img/global/linkedin-white.png" alt=""></a>
                     </div>
                 </div>
     
@@ -241,32 +267,5 @@
 
     
 </body>
-
-        <!-- Hero Splide -->
-        <script>
-            var splide = new Splide( '#hero-slideshow' , {
-            type: 'fade',
-            perPage: 1,
-            arrows:false,
-            pagination:false,
-            autoplay:true, 
-            pauseOnFocus:false,
-            pauseOnHover:false, 
-            interval: 6000,
-            speed: 3000,
-            rewind: boolean = true,
-            arrowPath: string = 'm 16 2 l -1 1 l 14.5 14.6 l -14.5 14.5 l 1 0.9 l 15.531 -15.516 z'
-            } ).mount();
-
-            splide.on( 'move', function (
-                  newIndex, prevIndex, destIndex
-            ) {
-                  jQuery('#hero-slideshow .splide__slide:nth-of-type(' + (destIndex + 1) + ') .zoom-out').css('animation','none')
-
-                  setTimeout(function(){
-                        jQuery('#hero-slideshow .splide__slide:nth-of-type(' + (destIndex + 1) + ') img').css('animation', '')
-                  }, 10);    
-            } );
-        </script>
 
 </html>

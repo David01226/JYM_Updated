@@ -65,7 +65,7 @@
 
 .roofing-left {
     width: 50%;
-    padding-top: 40px;
+    padding-top: 2%;
 }
 
 .roofing-header {
@@ -110,7 +110,7 @@
 
 .roofing-right img {
     width: 95%;
-    height: 490px;
+    /* height: 490px; */
     box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
               0 2px 2px rgba(0,0,0,0.12), 
               0 4px 4px rgba(0,0,0,0.12), 
@@ -137,7 +137,7 @@
 
 .solar-left img {
     width: 98%;
-    height: 490px;
+    /* height: 490px; */
     box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
               0 2px 2px rgba(0,0,0,0.12), 
               0 4px 4px rgba(0,0,0,0.12), 
@@ -150,7 +150,7 @@
 
 .solar-right {
     width: 50%;
-    padding-top: 40px;
+    padding-top: 2.5%;
     margin-right: 2%;
 }
 
@@ -191,12 +191,13 @@
 
 /* JYM background decoration */
 
+
 .greenline {
     position: absolute;
     top: 502px;
-    right: 5.2%;
+    right: calc(5% + 5px);
     width: 5px;
-    height: 2013px;
+    height: 2330px;
     background-color: #013220;
     z-index: 5;
 }
@@ -206,18 +207,189 @@
     top: 502px;
     right: 5%;
     width: 5px;
-    height: 2012px;
+    height: 2330px;
     background-color: #a59779;
     z-index: 5;
 }
 
 .jym-logo-decoration {
     position: absolute;
-    top: 1400px;
-    right: 2.2%;
+    top: 1450px;
+    right: calc(5% - 55px);
     width: 120px;
     height: 50px;
     transform: rotate(90deg);
     border: 2px solid #a59779;
     z-index: 6;
+}
+
+
+/* Breakpoints */
+
+@media screen and (min-width: 2240px) {
+    
+}
+
+
+@media screen and (max-width: 1600px) {
+    .roofing-header, .solar-header {
+        height: 55px;
+    }
+
+    .services-container h1 {
+        font-size: 25px;
+    }
+
+    .services-container p {
+        font-size: 18px;
+    }
+
+    .services-container a {
+        font-size: 18px;
+        padding: 10px 18px;
+    }
+
+    .roofing-description {
+        margin: 20px 10px 20px 10px;
+    }
+
+    .roofing-services {
+        margin: 12px 10px 20px 15px;
+    }
+
+    .solar-services {
+        margin: 68px 10px 20px 25px;
+    }
+
+    .goldline {
+        top: 362px;
+        width: 5px;
+        height: 1740px;
+    }
+
+    .greenline {
+        top: 362px;
+        width: 5px;
+        height: 1740px;
+    }
+
+    .jym-logo-decoration {
+        top: 1050px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .roofing-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .solar-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .roofing-left, .roofing-right, .solar-left, .solar-right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .roofing-left, .solar-right {
+        margin-bottom: 40px;
+    }
+
+    .roofing-services, .roofing-description, .solar-services, .solar-description {
+        width: 100%;
+    }
+
+    .roofing-header, .solar-header {
+        width: 100%;
+        border: 1px solid #a59779;
+    }
+
+    .solar-header {
+        float: unset;
+        padding-left: 20px;
+        justify-content: flex-start;
+    }
+
+    .roofing-right img, .solar-left img {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .roofing-header, .solar-header {
+        height: 40px;
+    }
+
+    .roofing-header{
+        width: 105%;
+    }
+
+    .roofing-container, .solar-container {
+        margin-bottom: 60px;
+    }
+
+    .services-container h1 {
+        font-size: 17px;
+    }
+
+    .services-container p {
+        font-size: 14px;
+    }
+
+    .services-container a {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
+
+    .roofing-services {
+        margin: 8px 10px 12px 15px;
+    }
+
+    .roofing-description {
+        margin: 12px 10px 20px 10px;
+    }
+
+    .roofing-description p {
+        margin-bottom: 10px;
+    }
+
+    .solar-description {
+        margin: 12px 10px 35px 20px;
+    }
+
+    .solar-services {
+        margin: 48px 10px 14px 16px;
+    }
+
+    .goldline {
+        top: 252px;
+        width: 3px;
+        height: 1700px;
+    }
+
+    .greenline {
+        top: 252px;
+        width: 3px;
+        right: calc(5% + 3px);
+        height: 1700px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+
+@media screen and (max-width: 550px) {
+
 }

@@ -21,7 +21,7 @@ jQuery(document).ready(function () {
 
     const appearOptions = {
         threshold: 0,
-        rootMargin: "0px 0px -150px 250px"
+        rootMargin: "10% 10% 10% 10%"
     };
     
     const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {

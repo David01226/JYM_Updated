@@ -24,6 +24,9 @@
     <!-- Animations -->
     <script src="animations.js"></script>
 
+    <!-- Mobile Menu -->
+    <script src="mobile-menu.js"></script>
+
     <!-- Splide -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
@@ -49,9 +52,32 @@
                     <a href="ourwork.html">OUR WORK</a>
                     <a href="contact.html">CONTACT</a>
                 </div>
+                <div id="hamburger-menu" class="hamburger-menu">
+                    <img src="img/global/hamburger.png" alt="">
+                </div>
             </div>
         </section>
 
+        <!-- Mobile-Menu -->
+        <aside class="mobile-menu-container">
+            <div class="mobile-menu-top">
+                <img class="close-mobile-menu" src="img/global/close-icon.png" alt="">
+            </div>
+            <div class="mobile-menu-links">
+                <a href="about.html">About us</a>
+                <a href="services.html">Services</a>
+                <a href="ourwork.html">Our Work</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="mobile-menu-bottom">
+                <a href="https://www.instagram.com/jymroofinglimited/" target="_blank"><img src="img/global/insta-green.png" alt=""></a>
+                <a href="https://www.linkedin.com/company/jym-roofing-and-maintenance/" target="_blank"><img src="img/global/insta-green.png" alt=""></a>
+            </div>
+        </aside>
+
+        <!-- Backdrop -->
+
+        <div class="backdrop"></div>
 
         <!-- Quick-Contact-Links -->
         <section class="quick-contact-links">
@@ -85,9 +111,9 @@
 
         <!-- Hero-Image-Slideshow -->
         <section id="hero-slideshow" class="splide" aria-label="Splide Basic HTML Example">
-            <div class="fade-down">
 
-            </div>
+            <div class="fade-down"></div>
+            
             <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
@@ -140,7 +166,7 @@
         </section>
 
         <div class="overlay-hero"></div>
-        <div class="overlay-fade-up"></div>
+        <div class="overlay-fade-up fade-in"></div>
     </main>
 
     
