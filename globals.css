@@ -160,6 +160,13 @@ aside.open {
     margin-right: 5px;
 }
 
+.mobile-menu-bottom svg {
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
 /* Backdrop */
 
 .backdrop {
@@ -167,6 +174,7 @@ aside.open {
     position: fixed;
     inset: 0;
     backdrop-filter: blur(2px);
+    background-color: #00000021;
     z-index: 15;
 }
 
@@ -174,15 +182,36 @@ aside.open {
     display: block;
 }
 
+.greenline {
+    position: fixed;
+    top: 0px;
+    right: calc(5% + 5px);
+    width: 5px;
+    height: 100vh;
+    background-color: #013220;
+    z-index: 4;
+}
+
+.goldline {
+    position: fixed;
+    top: 0px;
+    right: 5%;
+    width: 5px;
+    height: 100vh;
+    background-color: #a59779;
+    z-index: 4;
+}
+
 /* Small hero */
 
-.small-hero-container {
+.small-hero-container-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 500px;
-    position: relative;
-    margin-bottom: 100px;
-    background-image: url(img/aboutpage/cardImage.png);
-    background-size: cover;
+    background-color: white;
+    z-index: 5;
 }
 
 .small-hero-container img{
@@ -328,7 +357,7 @@ aside.open {
     /* border: 1px solid black; */
     padding-left: 22px;
     top: 0;
-    right: -190px;
+    right: -192px;
     box-shadow: 5px 5px 10px #0000004d;
 }
 
@@ -337,7 +366,7 @@ aside.open {
     /* border: 1px solid black; */
     padding-left: 28px;
     top: 62px;
-    right: -190px;
+    right: -192px;
     box-shadow: 5px 5px 10px #0000004d;
 }
 
@@ -345,7 +374,7 @@ aside.open {
     /* border: 1px solid black; */
     padding-left: 20px;
     top: 124px;
-    right: -190px;
+    right: -192px;
     box-shadow: 5px 5px 10px #0000004d;
 }
 
@@ -801,6 +830,10 @@ aside.open {
 
     }
 
+    .small-hero-container-backdrop {
+        height: 360px;
+    }
+
     .small-hero-overlay {
         padding-bottom: 40px;
     }
@@ -986,10 +1019,11 @@ aside.open {
 
     }
 
-    .small-hero-container {
-        background-image: url(img/homepage/autumn_roofing.png);
-        background-size: cover;
+    .small-hero-container-backdrop {
+        height: 250px;
     }
+
+    
 
     .small-hero-overlay {
         padding-bottom: 28px;
@@ -1204,18 +1238,6 @@ aside.open {
         display: none;
     }
 
-}
-
-
-@media screen and (max-width: 550px) {
-    .small-hero-overlay {
-        padding-bottom: 20px;
-    }
-
-    .header-homepage.headerFadeDown.appear, .header-homepage.smallHeroFade.appear {
-        height: 95px;
-    }
-
     .partners-container {
         height: unset;
     }
@@ -1236,6 +1258,33 @@ aside.open {
         margin-top: 18px;
     }
 
+    .footer-contact-details a, .footer-links-left a, .footer-ethos p, .footer-logo p {
+        text-align: center;
+    }
+
 }
+
+
+@media screen and (max-width: 550px) {
+    .small-hero-overlay {
+        padding-bottom: 20px;
+    }
+
+    .header-homepage.headerFadeDown.appear, .header-homepage.smallHeroFade.appear {
+        height: 95px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 320px) {
+    aside {
+        width: 100%;
+    }
+
+}
+
+
 
 

@@ -5,6 +5,18 @@
     justify-content: flex-start;
 }
 
+/* Small Hero */
+
+.small-hero-container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-bottom: 100px;
+    background-image: url(img/ourwork/ourwork-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 6;
+}
 
 /* Our work Content */
 
@@ -43,10 +55,17 @@
     /* height: 450px; */
 }
 
+.img_box {
+    width: 100%;
+    
+}
+
 
 .splide__slide img {
-    height: 425px;
-    width: 565px;
+    /* height: 425px;
+    width: 565px; */
+    width: 100%;
+    height: 100%;
 }
 
 .splide__slide {
@@ -55,6 +74,35 @@
     justify-content: center;
     align-items: center;
 }
+
+.splide__arrow {
+    width: 5em !important;
+    height: 5em !important;
+    background: white !important;
+    opacity: 1 !important;
+}
+
+.splide__arrow svg {
+    width: 3.2em !important;
+    height: 3.2em !important;
+    fill: #013220 !important;
+    
+}
+
+.splide__pagination__page {
+    width: 15px !important;
+    height: 15px !important;
+    opacity: 1 !important;
+    background: white !important;
+}
+
+.splide__pagination__page.is-active {
+    background: #013220 !important;
+    width: 20px !important;
+    height: 20px !important;
+    border: 1px solid white !important;
+}
+
 
 
 
@@ -66,17 +114,90 @@
 }
 
 
-@media screen and (max-width: 1600px) {
-    
+@media screen and (max-width: 1900px) {
+    .splide__slide img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1600px) {
+    .splide__arrow {
+        width: 3em !important;
+        height: 3em !important;
+    }
+    
+    .splide__arrow svg {
+        width: 2em !important;
+        height: 2em !important;
+    }
 
+    .splide__pagination__page {
+        width: 12px !important;
+        height: 12px !important;
+    }
+    
+    .splide__pagination__page.is-active {
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    .slideshow-container h3 {
+        font-size: 22px;
+    }
+
+    .slideshow-container {
+        margin-bottom: 50px;
+    }
+
+    .small-hero-container.smallHeroFade.appear {
+        margin-bottom: 48px;
+    }
+
+    .ourwork-container {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .small-hero-container {
+        background-image: url(img/ourwork/ourwork-hero-mobile.jpg);
+        background-size: cover;
+    }
+    .slideshow-container h3 {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 600px) {
+    .slideshow-container h3 {
+        font-size: 18px;
+    }
 
+    .splide__arrow {
+        width: 2.5em !important;
+        height: 2.5em !important;
+    }
+    
+    .splide__arrow svg {
+        width: 1.5em !important;
+        height: 1.5m !important;
+    }
+
+    .splide__pagination__page {
+        width: 8px !important;
+        height: 8px !important;
+    }
+    
+    .splide__pagination__page.is-active {
+        width: 12px !important;
+        height: 12px !important;
+    }
+
+    .slideshow-container {
+        width: 100%;
+    }
 }
 
 

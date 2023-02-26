@@ -1,12 +1,23 @@
-
-
-
 .main-container {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+
+/* Small Hero */
+
+.small-hero-container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-bottom: 100px;
+    background-image: url(img/aboutpage/cardImage.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 6;
 }
 
 
@@ -138,26 +149,6 @@
 
 /* JYM background decoration */
 
-.greenline {
-    position: absolute;
-    top: 502px;
-    right: calc(5% + 5px);
-    width: 5px;
-    height: 4050px;
-    background-color: #013220;
-    z-index: 5;
-}
-
-.goldline {
-    position: absolute;
-    top: 502px;
-    right: 5%;
-    width: 5px;
-    height: 4050px;
-    background-color: #a59779;
-    z-index: 5;
-}
-
 .jym-logo-decoration {
     position: absolute;
     top: 1140px;
@@ -276,7 +267,7 @@
     }
 
 
-    .goldline {
+    /* .goldline {
         top: 362px;
         width: 5px;
         height: 2430px;
@@ -286,12 +277,17 @@
         top: 362px;
         width: 5px;
         height: 2430px;
-    }
+    } */
 
 }
 
 
 @media screen and (max-width: 1000px) {
+    .small-hero-container {
+        background-image: url(img/homepage/autumn_roofing.png);
+        background-size: cover;
+    }
+
     .about-text p {
         font-size: 16px;
         margin-bottom: 30px;
@@ -358,7 +354,7 @@
     }
 
 
-    .goldline {
+    /* .goldline {
         top: 252px;
         width: 3px;
         height: 1700px;
@@ -369,7 +365,7 @@
         width: 3px;
         right: calc(5% + 3px);
         height: 1700px;
-    }
+    } */
 }
 
 
