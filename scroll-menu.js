@@ -1,6 +1,7 @@
 // Scroll menu visibility on scroll
 
 jQuery(document).ready(function () {
+
     jQuery(window).scroll(function () {
         checkScroll();
     });
@@ -10,7 +11,9 @@ jQuery(document).ready(function () {
     });
 
     checkScroll();
+
 });
+
 
 function checkScroll() {
         var scroll = jQuery(window).scrollTop();

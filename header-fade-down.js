@@ -1,3 +1,5 @@
+// Controls the header fade down on hover
+
 jQuery(document).ready(function () {
 
     const addClass = () => {

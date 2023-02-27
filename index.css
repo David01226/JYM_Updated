@@ -2,13 +2,16 @@
     width: 100%;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
+
+
+/* Header Fade-down */
 
 .fade-down {
     position: absolute;
     top: 0;
     left: 0;
-    /* background-image: linear-gradient(to bottom, #013220, #01322000); */
     z-index: 2;
     width: 100%;
     height: 15%;
@@ -37,9 +40,6 @@
 }
 
 
-
-
-
 /* Hero-Text */
 
 .hero-text {
@@ -47,10 +47,6 @@
     bottom: 8%;
     left: 5%;
     z-index: 10;
-}
-
-.hero-text-top {
-
 }
 
 .hero-text-top h1 {
@@ -77,10 +73,7 @@
 }
 
 
-
 /* Hero */
-
-
 
 #hero-slideshow {
     width: 100%;
@@ -120,47 +113,44 @@
 }
 
 .hero-1 {
-    background-image: url(img/homepage/green_coast_solar.png); 
+    background-image: url(img/homepage/hero_1.png); 
 }
 .hero-2 {
-    background-image: url(img/homepage/commercial_solar_flat_roof.png);
+    background-image: url(img/homepage/Hero_2.png);
 }
 .hero-3 {
-    background-image: url(img/homepage/Hero_1.jpg); 
+    background-image: url(img/homepage/Hero_3.jpg); 
 }
 .hero-4 {
-    background-image: url(img/homepage/James_roofing.png);
+    background-image: url(img/homepage/Hero_4.png);
 }
 .hero-5 {
-    background-image: url(img/homepage/flat_solar_green_estate.png); 
+    background-image: url(img/homepage/Hero_5.png); 
 }
 .hero-6 {
-    background-image: url(img/homepage/coastal_solar.png);
+    background-image: url(img/homepage/Hero_6.png);
 }
 .hero-7 {
-    background-image: url(img/homepage/seaside_solar.png); 
+    background-image: url(img/homepage/Hero_7.png); 
 }
 .hero-8 {
-    background-image: url(img/homepage/sunset-solar.png);
+    background-image: url(img/homepage/Hero_8.png);
 }
 .hero-9 {
-    background-image: url(img/homepage/Hero_2.jpg); 
+    background-image: url(img/homepage/Hero_9.jpg); 
 }
 .hero-10 {
-    background-image: url(img/homepage/autumn_roofing.png);
+    background-image: url(img/homepage/Hero_10.png);
 }
 .hero-11 {
-    background-image: url(img/homepage/Hero_4.jpg);
+    background-image: url(img/homepage/Hero_11.jpg);
 }
-
-
 
 .zoom-out {
     width: 100%;
     height: 100%;
     animation: zoom-out 9s infinite linear;
 }
-
 
 @keyframes zoom-out {
     from{
@@ -173,12 +163,10 @@
 } 
 
 
-
 /* Breakpoints */
 
 @media screen and (min-width: 2240px) {
     
-
     .hero-text-bottom {
         bottom: 7%;
     }
@@ -193,10 +181,8 @@
     
 }
 
-
 @media screen and (max-width: 1600px) {
     
-
     .hero-text-top h1 {
         font-size: 70px;
     }
@@ -213,7 +199,6 @@
 
 
 @media screen and (max-width: 1000px) {
-    
 
     .hero-text-top h1 {
         font-size: 52px;
@@ -247,41 +232,38 @@
         font-size: 20px;
     }
     
-    .hero-1 {
-        background-image: url(img/homepage/green_coast_solar-mobile.png); 
+   .hero-1 {
+    background-image: url(img/homepage/hero_1_mobile.png); 
     }
     .hero-2 {
-        background-image: url(img/homepage/commercial_solar_flat_roof-mobile.png);
+        background-image: url(img/homepage/Hero_2_mobile.png);
     }
     .hero-3 {
-        background-image: url(img/homepage/Hero_1-mobile-2.png); 
+        background-image: url(img/homepage/Hero_3_mobile.png); 
     }
     .hero-4 {
-        background-image: url(img/homepage/James_roofing-mobile.png);
+        background-image: url(img/homepage/Hero_4_mobile.png);
     }
     .hero-5 {
-        background-image: url(img/homepage/flat_solar_green_estate-mobile.png); 
+        background-image: url(img/homepage/Hero_5_mobile.png); 
     }
     .hero-6 {
-        background-image: url(img/homepage/coastal_solar-mobile.png);
+        background-image: url(img/homepage/Hero_6_mobile.png);
     }
     .hero-7 {
-        background-image: url(img/homepage/seaside_solar-mobile.png); 
+        background-image: url(img/homepage/Hero_7_mobile.png); 
     }
     .hero-8 {
-        background-image: url(img/homepage/sunset-solar-mobile.png);
+        background-image: url(img/homepage/Hero_8_mobile.png);
     }
     .hero-9 {
-        background-image: url(img/homepage/Hero_2-mobile.png); 
+        background-image: url(img/homepage/Hero_9_mobile.png); 
     }
     .hero-10 {
-        background-image: url(img/homepage/autumn_roofing-mobile.png);
+        background-image: url(img/homepage/Hero_10_mobile.png);
     }
     .hero-11 {
-        background-image: url(img/homepage/Hero_4-mobile.png);
+        background-image: url(img/homepage/Hero_11_mobile.png);
     }
     
-    
 }
-
-

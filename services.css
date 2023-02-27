@@ -20,9 +20,7 @@
 }
 
 
-
 /* Services Section */
-
 
 .services-container {
     width: 80%;
@@ -123,7 +121,6 @@
 
 .roofing-right img {
     width: 95%;
-    /* height: 490px; */
     box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
               0 2px 2px rgba(0,0,0,0.12), 
               0 4px 4px rgba(0,0,0,0.12), 
@@ -131,8 +128,6 @@
               0 16px 16px rgba(0,0,0,0.12);
     border-radius: 15px;
 }
-
-
 
 .solar-container {
     width: 100%;
@@ -150,7 +145,6 @@
 
 .solar-left img {
     width: 98%;
-    /* height: 490px; */
     box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
               0 2px 2px rgba(0,0,0,0.12), 
               0 4px 4px rgba(0,0,0,0.12), 
@@ -158,8 +152,6 @@
               0 16px 16px rgba(0,0,0,0.12);
     border-radius: 15px;
 }
-
-
 
 .solar-right {
     width: 50%;
@@ -199,10 +191,7 @@
 }
 
 
-
-
 /* JYM background decoration */
-
 
 .jym-logo-decoration {
     position: absolute;
@@ -214,6 +203,7 @@
     border: 2px solid #a59779;
     z-index: 6;
 }
+
 
 /* Partners */
 
@@ -227,7 +217,6 @@
 @media screen and (min-width: 2240px) {
     
 }
-
 
 @media screen and (max-width: 1600px) {
     .roofing-header, .solar-header {
@@ -290,8 +279,6 @@
         margin-right: unset;
     }
 
-
-
     .roofing-services, .roofing-description, .solar-services, .solar-description {
         width: 100%;
     }
@@ -324,7 +311,6 @@
     }
 
 }
-
 
 @media screen and (max-width: 1000px) {
 
@@ -406,7 +392,6 @@
         border: none;
     }
 }
-
 
 @media screen and (max-width: 550px) {
 

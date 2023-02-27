@@ -12,6 +12,7 @@ a {
     text-decoration: none;
 }
 
+
 /* contact-background-img */
 
 .contact-background-img {
@@ -25,8 +26,6 @@ a {
     background-position: center;
     z-index: 1;
 }
-
-
 
 .contact-background-img-fade-down {
     position: absolute;
@@ -48,8 +47,8 @@ a {
     z-index: 2;
 }
 
-/* Header */
 
+/* Header */
 
 .header-homepage {
     position: unset;
@@ -68,6 +67,7 @@ a {
     background-color: rgba(255, 255, 255, 0);
     
 }
+
 
 /* Linear-Gradient-transition */
 
@@ -181,18 +181,16 @@ a {
     height: 70px;
 }
 
-
-
 .contact-social p {
     font-weight: 700;
     margin-bottom: 20px;
 }
 
+
 /* Contact Form */
 
 .contact-top-right {
     width: 55%;
-    /* background-color: red; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -214,13 +212,13 @@ a {
 .first-asterisk {
     position: absolute;
     top: 193px;
-    left: 49px;
+    left: 5.6%;
 }
 
 .second-asterisk {
     position: absolute;
     top: 271px;
-    left: 49px;
+    left: 5.6%;
 }
 
 .call-back-container h3 {
@@ -271,7 +269,6 @@ select option {
     height: 60px;
     background-color: #DBE0EB;
 }
-
 
 textarea {
     width: 90%;
@@ -351,6 +348,7 @@ iframe {
     color: #b69e6a;
 }
 
+
 /* Breakpoints */
 
 @media screen and (min-width: 2240px) {
@@ -362,7 +360,6 @@ iframe {
         top: 1696px;
     }
 }
-
 
 @media screen and (max-width: 1600px) {
 
@@ -459,14 +456,14 @@ iframe {
 
     .first-asterisk {
         top: 102px;
-        left: 32px;
+        left: 5.6%;
         width: 12px;
         height: 12px;
     }
 
     .second-asterisk {
         top: 154px;
-        left: 32px;
+        left: 5.6%;
         width: 12px;
         height: 12px;
     }
@@ -505,7 +502,6 @@ iframe {
         margin-bottom: 100px;
     }
 }
-
 
 @media screen and (max-width: 1000px) {
     .contact-header-backdrop {
@@ -560,9 +556,9 @@ iframe {
         font-size: 18px;
     }
 
-    
-
-
+    select {
+        padding: 5px 12px;
+    }
 
 }
 
@@ -609,7 +605,6 @@ iframe {
     .contact-bottom-left {
         width: 100%;
     }
-
 }
 
 @media screen and (max-width: 600px) {
@@ -657,10 +652,19 @@ iframe {
         margin-bottom: 30px;
     }
 
+    .first-asterisk {
+        top: 12.5%;
+    }
+
+    .second-asterisk {
+        top: 19.9%;
+    }
+
 }
 
 
 @media screen and (max-width: 450px) {
+
     .contact-info-container h1 {
         font-size: 35px;
         line-height: 45px;
@@ -724,9 +728,14 @@ iframe {
     .contact-bottom {
         margin-bottom: 35px;
     }
-}
 
-@media screen and (max-width: 450px) {
+    .first-asterisk {
+        top: 10.5%;
+    }
+
+    .second-asterisk {
+        top: 18.1%;
+    }
 
     iframe {
         border-radius: unset;
@@ -736,15 +745,3 @@ iframe {
         width: 111%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-

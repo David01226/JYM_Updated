@@ -21,7 +21,6 @@
 }
 
 
-
 /* About content */
 
 .about-container {
@@ -35,14 +34,6 @@
 
 .about-text {
     width: 100%;
-}
-
-.about-text-top {
-
-}
-
-.about-text-bottom {
-
 }
 
 .about-text p {
@@ -70,6 +61,7 @@
               0 8px 8px rgba(0,0,0,0.12),
               0 16px 16px rgba(0,0,0,0.12);
 }
+
 
 /* Meet the team */
 
@@ -147,6 +139,7 @@
     text-align: center;
 }
 
+
 /* JYM background decoration */
 
 .jym-logo-decoration {
@@ -205,6 +198,7 @@
     background: linear-gradient(white, rgba(255, 255, 255, 0));
 }
 
+
 /* Breakpoints */
 
 @media screen and (min-width: 2240px) {
@@ -237,7 +231,6 @@
     }
 
     .meet-img-row-top img {
-        /* width: 215px; */
         margin-bottom: 20px;
     }
 
@@ -246,7 +239,6 @@
     }
 
     .meet-img-row img {
-        /* width: 215px; */
         margin-bottom: 20px;
     }
 
@@ -266,25 +258,13 @@
         display: none;
     }
 
-
-    /* .goldline {
-        top: 362px;
-        width: 5px;
-        height: 2430px;
-    }
-
-    .greenline {
-        top: 362px;
-        width: 5px;
-        height: 2430px;
-    } */
-
 }
 
 
 @media screen and (max-width: 1000px) {
+
     .small-hero-container {
-        background-image: url(img/homepage/autumn_roofing.png);
+        background-image: url(img/homepage/Hero_10.png);
         background-size: cover;
     }
 
@@ -316,7 +296,6 @@
     }
 
     .meet-img-row-top img {
-        /* width: 125px; */
         margin-bottom: 20px;
     }
 
@@ -325,7 +304,6 @@
     }
 
     .meet-img-row img {
-        /* width: 125px; */
         margin-bottom: 20px;
     }
 
@@ -353,24 +331,12 @@
         display: none;
     }
 
-
-    /* .goldline {
-        top: 252px;
-        width: 3px;
-        height: 1700px;
-    }
-
-    .greenline {
-        top: 252px;
-        width: 3px;
-        right: calc(5% + 3px);
-        height: 1700px;
-    } */
 }
 
 
 
 @media screen and (max-width: 600px) {
+
     .about-container {
         width: 90%;
     }
@@ -409,7 +375,6 @@
         height: 210px;
     }
 
-    
 }
 
 

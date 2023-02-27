@@ -1,6 +1,8 @@
-// Mobile Menu
+// Mobile Side Menu
 
 jQuery(document).ready(function () {
+
+    //Functions
     const openMenu = () => {
         document.querySelector('.backdrop').className = 'backdrop blur';
         document.querySelector('aside').className = 'open';
@@ -14,17 +16,20 @@ jQuery(document).ready(function () {
     }
     
     
-    
-    
+    //Event listeners
     document.getElementById('hamburger-menu').onclick = e => {
         e.preventDefault();
         openMenu();
     }
 
-    document.getElementById('scroll-hamburger-menu').onclick = e => {
-        e.preventDefault();
-        openMenu();
+    const scrollHamburgerMenu = document.getElementById('scroll-hamburger-menu')
+    if (scrollHamburgerMenu) {
+        scrollHamburgerMenu.onclick = e => {
+            e.preventDefault();
+            openMenu();
+        }
     }
+    
     
     document.querySelector('.close-mobile-menu').onclick = e => {
         closeMenu();
@@ -33,4 +38,5 @@ jQuery(document).ready(function () {
     document.querySelector('.backdrop').onclick = e => {
         closeMenu();
     }
+
 });

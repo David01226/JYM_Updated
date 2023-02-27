@@ -1,6 +1,5 @@
 // This causes things to fade in from the bottom as the page scrolls when .fade-in class is added
 
-
 jQuery(document).ready(function () {
 
     const headerFadeDown = document.querySelectorAll('.headerFadeDown');

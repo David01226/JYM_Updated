@@ -4,7 +4,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
     display: none;
@@ -15,7 +14,6 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
   overflow-x: hidden;
-
 }
 
 body.lock {
@@ -25,9 +23,6 @@ body.lock {
 .main-container {
     overflow-x: hidden;
 }
-
-
-
 
 
 /* Header */
@@ -99,6 +94,7 @@ body.lock {
     background-color: rgba(0, 0, 0, 0.062);
 }
 
+
 /* Mobile menu */
 
 aside {
@@ -167,6 +163,7 @@ aside.open {
     border-radius: 10px;
 }
 
+
 /* Backdrop */
 
 .backdrop {
@@ -201,6 +198,7 @@ aside.open {
     background-color: #a59779;
     z-index: 4;
 }
+
 
 /* Small hero */
 
@@ -250,6 +248,7 @@ aside.open {
     left: 0;
 }
 
+
 /* Scroll Header */
 
 .scroll-header-container {
@@ -261,7 +260,6 @@ aside.open {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    /* width: 100%; */
     height: 120px;
     z-index: 20;
     background-color: #013220;
@@ -278,15 +276,12 @@ aside.open {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    /* width: 100%; */
     height: 120px;
     z-index: 20;
     background-color: #013220;
     transition: all 0.5s ease-in-out;
     border-bottom: 3px solid #a59779;
 }
-
-
 
 .scroll-header-wrapper {
     width: 90%;
@@ -297,28 +292,13 @@ aside.open {
     align-items: center;
 }
 
-.scroll-header-left {
-
-}
-
-.scroll-header-left a {
-    
-}
-
-.scroll-header-left img {
-    
-}
-
-.scroll-header-right {
-
-}
-
 .scroll-header-right a {
     text-decoration: none;
     color: white;
     font-size: 28px;
     margin-left: 35px;
 }
+
 
 /* Quick-Links */
 
@@ -331,7 +311,6 @@ aside.open {
     right: 0;
     top: 200px;
     z-index: 10;
-
 }
 
 .quick-contact-links a {
@@ -339,7 +318,7 @@ aside.open {
     text-decoration: none;
 }
 
-.quick-phone, .quick-email, .quick-form {
+.quickPhone {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -349,61 +328,89 @@ aside.open {
     height: 60px;
     background-color: #FFCB08;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-
-.quick-phone {
-    /* border: 1px solid black; */
     padding-left: 22px;
     top: 0;
     right: -192px;
     box-shadow: 5px 5px 10px #0000004d;
+    opacity: 0;
+    transform: translateX(90px);
+    transition: transform 500ms ease-out 2.5s, opacity 800ms ease-in-out 2.5s, right 250ms ease-in-out;
 }
 
+.quickPhone.appear {
+    opacity: 1;
+    transform: translateX(0);
+}
 
-.quick-email {
-    /* border: 1px solid black; */
+.quickPhone.appear:hover {
+    right: -90px;
+}
+
+.quickEmail {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 280px;
+    height: 60px;
+    background-color: #FFCB08;
+    cursor: pointer;
     padding-left: 28px;
     top: 62px;
     right: -192px;
     box-shadow: 5px 5px 10px #0000004d;
+    opacity: 0;
+    transform: translateX(90px);
+    transition: transform 500ms ease-out 3s, opacity 800ms ease-in-out 3s, right 250ms ease-in-out;
 }
 
-.quick-form {
-    /* border: 1px solid black; */
+.quickEmail.appear {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.quickEmail.appear:hover {
+    right: -90px;
+}
+
+.quickForm {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 280px;
+    height: 60px;
+    background-color: #FFCB08;
+    cursor: pointer;
     padding-left: 20px;
     top: 124px;
     right: -192px;
     box-shadow: 5px 5px 10px #0000004d;
+    opacity: 0;
+    transform: translateX(90px);
+    transition: transform 500ms ease-out 3.5s, opacity 800ms ease-in-out 3.5s, right 250ms ease-in-out;
 }
 
-.quick-form img {
+.quickForm.appear {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.quickForm.appear:hover {
+    right: -36px;
+}
+
+.quickForm img {
     height: 50px;
     width: 55px;
-}
-
-.quick-phone.quickForm.appear:hover {
-    right: -90px;
-}
-
-.quick-phone:hover {
-    right: -90px;
-}
-
-.quick-email:hover {
-    right: -75px;
-}
-
-.quick-form:hover {
-    right: -32px;
 }
 
 .quick-text-phone {
     margin-left: 18px;
     font-size: 20px;
     font-weight: 600;
-
 }
 
 .quick-text-email {
@@ -429,12 +436,7 @@ aside.open {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border-top: 1px solid #013220; */
     z-index: 9;
-}
-
-.partners-text {
-
 }
 
 .partners-text p {
@@ -453,7 +455,6 @@ aside.open {
 
 
 /* Footer */
-
 
 .footer-container {
     color: white;
@@ -507,7 +508,6 @@ aside.open {
 
 .footer-logo p span{
     font-weight: 400;
-
 }
 
 .footer-ethos {
@@ -558,10 +558,6 @@ aside.open {
     margin-top: 12px;
 }
 
-.footer-links-right {
-
-}
-
 .footer-links-right img {
     width: 40px;
     height: 40px;
@@ -581,6 +577,7 @@ aside.open {
     font-size: 24px;
     font-weight: 300;
 }
+
 
 /* animations */
 
@@ -618,8 +615,6 @@ aside.open {
     opacity: 1;
     transform: translateX(0);
 }
-
-
 
 .fade-in {
     opacity: 0;
@@ -682,49 +677,10 @@ aside.open {
 }
 
 
-
-
-.quickPhone {
-    opacity: 0;
-    transform: translateX(90px);
-    transition: transform 500ms ease-out, opacity 800ms ease-in-out;
-    transition-delay: 2.5s;
-}
-
-.quickPhone.appear {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-
-.quickEmail {
-    opacity: 0;
-    transform: translateX(90px);
-    transition: transform 500ms ease-out, opacity 800ms ease-in-out;
-    transition-delay: 3s;
-}
-
-.quickEmail.appear {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.quickForm {
-    opacity: 0;
-    transform: translateX(90px);
-    transition: transform 500ms ease-out, opacity 800ms ease-in-out;
-    transition-delay: 3.5s;
-}
-
-.quickForm.appear {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-
 /* Breakpoints */
 
 @media screen and (min-width: 2240px) {
+
     .header-homepage.headerFadeDown.appear {
         height: 240px;
     }
@@ -739,60 +695,17 @@ aside.open {
         height: 85px;
     }
 
-    .quick-contact-links {
-        
-    }
-
-    .quick-phone {
-        
-    }
-
-    .quick-phone.quickPhone.appear {
-        
-    }
-
-    .quick-phone.quickForm.appear {
-        
-    }
-
-    .quick-email {
+    .quickEmail {
         top: 100px;
     }
 
-    .quick-email.quickEmail.appear {
-        
-    }
-
-    .quick-email.quickForm.appear {
-        
-    }
-
-    .quick-form {
+    .quickForm {
         top: 200px;
     }
 
-    .quick-form.quickForm.appear {
-        
-    }
-    
-
-    .quick-form img {
-        
-    }
-
-    .quick-email img {
-        
-    }
-
-    .quick-phone img {
-        
-    }
-
-    
-    .quick-phone, .quick-email, .quick-form {
+    .quickPhone, .quickEmail, .quickForm {
         width: 280px;
         height: 95px;
-        
     }
     
 }
@@ -800,7 +713,6 @@ aside.open {
 
 @media screen and (max-width: 1600px) {
     
-
     .header-homepage.headerFadeDown.appear, .header-homepage.smallHeroFade.appear {
         height: 160px;
     }
@@ -850,11 +762,11 @@ aside.open {
         top: 138px;
     }
 
-    .quick-phone {
+    .quickPhone {
         padding-left: 15px;
     }
 
-    .quick-phone.quickPhone.appear {
+    .quickPhone {
         right: -220px;
     }
 
@@ -862,11 +774,11 @@ aside.open {
         right: -220px;
     }
 
-    .quick-email {
+    .quickEmail {
         padding-left: 16px;
     }
 
-    .quick-email.quickEmail.appear {
+    .quickEmail {
         right: -220px;
         top: 54px;
     }
@@ -876,42 +788,52 @@ aside.open {
         top: 54px;
     }
 
-    .quick-form {
+    .quickForm {
         padding-left: 10px;
     }
 
-    .quick-form.quickForm.appear {
+    .quickForm {
         right: -220px;
         top: 108px;
     }
-    
 
-    .quick-form img {
+    .quickForm img {
         height: 40px;
         width: 45px;
     }
 
-    .quick-email img {
+    .quickEmail img {
         width: 32px;
     }
 
-    .quick-phone img {
+    .quickPhone img {
         width: 32px;
     }
 
     
-    .quick-phone, .quick-email, .quick-form {
+    .quickPhone, .quickEmail, .quickForm {
         width: 280px;
         height: 52px;
-        
+    }
+
+    .quick-text-phone, .quick-text-email, .quick-text-form {
+        font-size: 16px;
+    }
+
+    .quickPhone.appear:hover {
+        right: -135px;
+    }
+
+    .quickEmail.appear:hover {
+        right: -120px;
+    }
+
+    .quickForm.appear:hover {
+        right: -85px;
     }
 
     .partners-container {
         height: 145px;
-    }
-    
-    .partners-text {
-    
     }
     
     .partners-text p {
@@ -947,7 +869,6 @@ aside.open {
     .footer-logo p {
         font-size: 12px;
         margin-top: 4px;
-
     }
 
     .footer-ethos {
@@ -1045,11 +966,15 @@ aside.open {
         top: 118px;
     }
 
-    .quick-phone {
+    .quickPhone {
         padding-left: 8px;
     }
 
-    .quick-phone.quickPhone.appear {
+    .quickPhone.appear {
+        right: -235px;
+    }
+
+    .quickPhone.appear:hover, .quickEmail.appear:hover, .quickForm.appear:hover {
         right: -235px;
     }
 
@@ -1057,11 +982,11 @@ aside.open {
         right: -235px;
     }
 
-    .quick-email {
+    .quickEmail {
         padding-left: 12px;
     }
 
-    .quick-email.quickEmail.appear {
+    .quickEmail.appear {
         right: -235px;
         top: 42px;
     }
@@ -1071,31 +996,31 @@ aside.open {
         top: 42px;
     }
 
-    .quick-form {
+    .quickForm {
         padding-left: 7px;
     }
 
-    .quick-form.quickForm.appear {
+    .quickForm.appear {
         right: -235px;
         top: 84px;
     }
 
 
-    .quick-form img {
+    .quickForm img {
         height: 31px;
         width: 33px;
     }
 
-    .quick-email img {
+    .quickEmail img {
         width: 24px;
     }
 
-    .quick-phone img {
+    .quickPhone img {
         width: 28px;
     }
 
     
-    .quick-phone, .quick-email, .quick-form {
+    .quickPhone, .quickEmail, .quickForm {
         width: 280px;
         height: 40px; 
     }
@@ -1273,18 +1198,10 @@ aside.open {
     .header-homepage.headerFadeDown.appear, .header-homepage.smallHeroFade.appear {
         height: 95px;
     }
-
-
-
 }
 
 @media screen and (max-width: 320px) {
     aside {
         width: 100%;
     }
-
 }
-
-
-
-
