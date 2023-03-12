@@ -82,7 +82,7 @@ body.lock {
     left: 0;
     width: 100%;
     height: 388px;
-    background: linear-gradient(#e6646400, #013220);
+    background: linear-gradient(rgba(0,0,0,0), #013220);
 }
 
 .overlay-hero {
@@ -128,6 +128,8 @@ aside.open {
 
 .mobile-menu-top img {
     cursor: pointer;
+    width: 30px;
+    height: 30px;
 }
 
 .mobile-menu-links {
@@ -152,11 +154,8 @@ aside.open {
     margin-bottom: 50px;
 }
 
-.mobile-menu-bottom img{
-    margin-right: 5px;
-}
 
-.mobile-menu-bottom svg {
+.mobile-menu-bottom svg, .mobile-menu-bottom img {
     margin-right: 5px;
     width: 40px;
     height: 40px;
@@ -197,6 +196,26 @@ aside.open {
     height: 100vh;
     background-color: #a59779;
     z-index: 4;
+}
+
+.jym-logo-decoration {
+    position: absolute;
+    top: 1140px;
+    right: calc(5% - 21px);
+    height: 120px;
+    width: 50px;
+    border: 2px solid #a59779;
+    z-index: 6;
+}
+
+.jym-logo-decoration-second {
+    position: absolute;
+    top: 2934px;
+    right: calc(5% - 21px);
+    height: 120px;
+    width: 50px;
+    border: 2px solid #a59779;
+    z-index: 6;
 }
 
 
@@ -277,7 +296,7 @@ aside.open {
     justify-content: center;
     align-items: flex-start;
     height: 120px;
-    z-index: 20;
+    z-index: 15;
     background-color: #013220;
     transition: all 0.5s ease-in-out;
     border-bottom: 3px solid #a59779;
@@ -429,28 +448,41 @@ aside.open {
 /* Partners */
 
 .partners-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 245px;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     z-index: 9;
+}
+
+.partners-container-border {
+    width: 100%;
+    height: 245px;
+    background-color: white;
+    z-index: 9;
+    border-top: 1px solid black;
 }
 
 .partners-text p {
     font-size: 25px;
     font-weight: 400;
+    margin-bottom: 20px;
 }
 
 .partner-logos {
-    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 25px;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.partner-logos img {
+    height: 70px;
 }
 
 
@@ -466,7 +498,7 @@ aside.open {
     align-items: center;
     background-color: #013220;
     padding: 0 5%;
-    z-index: 10;
+    z-index: 9;
 }
 
 .footer-container a {
@@ -676,6 +708,46 @@ aside.open {
     transform: translateX(0);
 }
 
+/* scroll top button */
+
+#scroll-btn-container {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+
+    z-index: 19;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+
+.visible {
+    opacity: 1 !important;
+    cursor: pointer;
+}
+
+/* Submit Page */
+
+.submit-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 200px);
+    z-index: 14;
+    padding: 0 5% 15% 5%;
+}
+
+.submit-container h1 {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 38px;
+}
+
 
 /* Breakpoints */
 
@@ -706,6 +778,10 @@ aside.open {
     .quickPhone, .quickEmail, .quickForm {
         width: 280px;
         height: 95px;
+    }
+
+    .submit-container {
+        height: calc(100vh - 240px);
     }
     
 }
@@ -832,21 +908,20 @@ aside.open {
         right: -85px;
     }
 
-    .partners-container {
+    .partners-container, .partners-container-border {
         height: 145px;
     }
     
     .partners-text p {
         font-size: 18px;
-        margin-top: 10px;
     }
 
     .partner-logos {
         margin-top: 4px;
     }
-    
+
     .partner-logos img {
-        width: 15%;
+        height: 45px;
     }
 
     .footer-container {
@@ -892,6 +967,21 @@ aside.open {
 
     .footer-contact-details a {
         font-size: 18px;
+    }
+
+    #scroll-btn-container {
+        right: 15px;
+        bottom: 15px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .submit-container {
+        height: calc(100vh - 160px);
+    }
+
+    .submit-container h1 {
+        font-size: 30px;
     }
     
 }
@@ -1025,12 +1115,16 @@ aside.open {
         height: 40px; 
     }
 
-    .partners-container {
+    .partners-container, .partners-container-border {
         height: 105px;
     }
     
     .partners-text p {
         font-size: 14px;
+    }
+
+    .partner-logos img {
+        height: 33px;
     }
 
 
@@ -1078,7 +1172,46 @@ aside.open {
     .footer-contact-details a {
         font-size: 14px;
     }
+
+    #scroll-btn-container {
+        right: 12px;
+        bottom: 12px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .submit-container {
+        height: calc(100vh - 115px);
+    }
+
+    .submit-container h1 {
+        font-size: 25px;
+    }
+
+    .goldline {
+        width: 3px;
+        height: 2600px;
+    }
+
+    .greenline {
+        width: 3px;
+        right: calc(5% + 3px);
+        height: 2600px;
+    }
     
+    .jym-logo-decoration {
+        top: 880px;
+        right: calc(5% - 12px);
+        height: 70px;
+        width: 30px;
+        border: 1px solid #a59779;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .partner-logos img {
+        height: 33px;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -1156,6 +1289,10 @@ aside.open {
         margin-bottom: 10px;
         font-size: 16px;
     }
+
+    .partner-logos img {
+        height: 25px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1167,16 +1304,20 @@ aside.open {
         height: unset;
     }
 
+    .partners-container, .partners-container-border {
+        height: unset;
+    }
+
     .partner-logos {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: space-around !important;
         margin-top: 10px;
     }
 
     .partner-logos img {
-        width: 35%;
         margin-bottom: 28px;
+        height: 32px;
     }
 
     .partners-text p {
@@ -1197,6 +1338,10 @@ aside.open {
 
     .header-homepage.headerFadeDown.appear, .header-homepage.smallHeroFade.appear {
         height: 95px;
+    }
+
+    .submit-container {
+        height: calc(100vh - 95px);
     }
 }
 

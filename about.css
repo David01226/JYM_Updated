@@ -142,7 +142,7 @@
 
 /* JYM background decoration */
 
-.jym-logo-decoration {
+/* .jym-logo-decoration {
     position: absolute;
     top: 1140px;
     right: calc(5% - 55px);
@@ -162,7 +162,7 @@
     transform: rotate(90deg);
     border: 2px solid #a59779;
     z-index: 6;
-}
+} */
 
 
 /* Footer Hero Image */
@@ -264,7 +264,7 @@
 @media screen and (max-width: 1000px) {
 
     .small-hero-container {
-        background-image: url(img/homepage/Hero_10.png);
+        background-image: url(img/aboutpage/cardImage_mobile.jpg);
         background-size: cover;
     }
 
@@ -317,14 +317,6 @@
 
     .about-footer-hero-container {
         height: 230px;
-    }
-
-    .jym-logo-decoration {
-        top: 880px;
-        right: calc(5% - 32px);
-        width: 70px;
-        height: 30px;
-        border: 1px solid #a59779;
     }
 
     .jym-logo-decoration-second {

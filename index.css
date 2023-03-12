@@ -113,37 +113,31 @@
 }
 
 .hero-1 {
-    background-image: url(img/homepage/hero_1.png); 
-}
-.hero-2 {
-    background-image: url(img/homepage/Hero_2.png);
+    background-image: url(img/homepage/hero_1.jpg); 
 }
 .hero-3 {
     background-image: url(img/homepage/Hero_3.jpg); 
 }
+.hero-2 {
+    background-image: url(img/homepage/Hero_2.png);
+}
 .hero-4 {
-    background-image: url(img/homepage/Hero_4.png);
+    background-image: url(img/homepage/Hero_4.jpg);
 }
 .hero-5 {
-    background-image: url(img/homepage/Hero_5.png); 
+    background-image: url(img/homepage/Hero_5.jpg); 
 }
 .hero-6 {
-    background-image: url(img/homepage/Hero_6.png);
+    background-image: url(img/homepage/Hero_6.jpg);
 }
 .hero-7 {
-    background-image: url(img/homepage/Hero_7.png); 
+    background-image: url(img/homepage/Hero_7.jpg); 
 }
 .hero-8 {
-    background-image: url(img/homepage/Hero_8.png);
+    background-image: url(img/homepage/Hero_8.jpg);
 }
 .hero-9 {
     background-image: url(img/homepage/Hero_9.jpg); 
-}
-.hero-10 {
-    background-image: url(img/homepage/Hero_10.png);
-}
-.hero-11 {
-    background-image: url(img/homepage/Hero_11.jpg);
 }
 
 .zoom-out {
@@ -214,6 +208,54 @@
     
 }
 
+@media screen and (max-width: 900px) {
+
+    .hero-text-top h1 {
+        font-size: 52px;
+    }
+
+    .hero-text-bottom {
+        bottom: 6%;
+    }
+
+    .hero-text-bottom h3 {
+        font-size: 26px;
+    }
+
+        .hero-1 {
+        background-image: url(img/homepage/hero_1_mobile.jpg); 
+        }
+        .hero-3 {
+            background-image: url(img/homepage/Hero_3_mobile.jpg); 
+        }
+        .hero-2 {
+            background-image: url(img/homepage/Hero_2_mobile.jpg);
+        }
+        .hero-4 {
+            background-image: url(img/homepage/Hero_4_mobile.jpg);
+        }
+        .hero-5 {
+            background-image: url(img/homepage/Hero_5_mobile.jpg); 
+        }
+        .hero-6 {
+            background-image: url(img/homepage/Hero_6_mobile.jpg);
+        }
+        .hero-7 {
+            background-image: url(img/homepage/Hero_7_mobile.jpg); 
+        }
+        .hero-8 {
+            background-image: url(img/homepage/Hero_8_mobile.jpg);
+        }
+        .hero-9 {
+            background-image: url(img/homepage/Hero_9_mobile.jpg); 
+        }
+
+        .zoom-out {
+            animation: none;
+        }
+    
+}
+
 @media screen and (max-width: 600px) {
 
     .header-homepage.headerFadeDown.appear, .header-homepage.smallHeroFade.appear {
@@ -225,45 +267,13 @@
     }
 
     .hero-text.fadeLeft.appear {
-        bottom: 4%;
+        bottom: 15%;
     }
 
     .hero-text-bottom h3 {
         font-size: 20px;
     }
     
-   .hero-1 {
-    background-image: url(img/homepage/hero_1_mobile.png); 
-    }
-    .hero-2 {
-        background-image: url(img/homepage/Hero_2_mobile.png);
-    }
-    .hero-3 {
-        background-image: url(img/homepage/Hero_3_mobile.png); 
-    }
-    .hero-4 {
-        background-image: url(img/homepage/Hero_4_mobile.png);
-    }
-    .hero-5 {
-        background-image: url(img/homepage/Hero_5_mobile.png); 
-    }
-    .hero-6 {
-        background-image: url(img/homepage/Hero_6_mobile.png);
-    }
-    .hero-7 {
-        background-image: url(img/homepage/Hero_7_mobile.png); 
-    }
-    .hero-8 {
-        background-image: url(img/homepage/Hero_8_mobile.png);
-    }
-    .hero-9 {
-        background-image: url(img/homepage/Hero_9_mobile.png); 
-    }
-    .hero-10 {
-        background-image: url(img/homepage/Hero_10_mobile.png);
-    }
-    .hero-11 {
-        background-image: url(img/homepage/Hero_11_mobile.png);
-    }
+
     
 }

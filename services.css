@@ -191,19 +191,6 @@
 }
 
 
-/* JYM background decoration */
-
-.jym-logo-decoration {
-    position: absolute;
-    top: 1450px;
-    right: calc(5% - 55px);
-    width: 120px;
-    height: 50px;
-    transform: rotate(90deg);
-    border: 2px solid #a59779;
-    z-index: 6;
-}
-
 
 /* Partners */
 
@@ -349,26 +336,7 @@
         margin-bottom: 10px;
     }
 
-    .jym-logo-decoration {
-        top: 880px;
-        right: calc(5% - 32px);
-        width: 70px;
-        height: 30px;
-        border: 1px solid #a59779;
-    }
 
-    .goldline {
-        top: 252px;
-        width: 3px;
-        height: 2600px;
-    }
-
-    .greenline {
-        top: 252px;
-        width: 3px;
-        right: calc(5% + 3px);
-        height: 2600px;
-    }
 }
 
 @media screen and (max-width: 600px) {

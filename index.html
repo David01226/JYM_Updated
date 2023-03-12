@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="globals.css">
     <link rel="stylesheet" href="index.css">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/global/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/global/favicon-16x16.png">
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -130,37 +134,32 @@
             <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <div class="hero-1 zoom-out"></div>
+                            <div class="hero-1 zoom-out" data-splide-lazy="nearby"></div>
+                        </li>
+                        
+                        <li class="splide__slide">
+                            <div class="hero-2 zoom-out" data-splide-lazy="nearby"></div>
                         </li>
                         <li class="splide__slide">
-                            <div class="hero-2 zoom-out"></div>
+                            <div class="hero-3 zoom-out" data-splide-lazy="nearby"></div>
                         </li>
                         <li class="splide__slide">
-                            <div class="hero-3 zoom-out"></div>
+                            <div class="hero-4 zoom-out" data-splide-lazy="nearby"></div>
                         </li>
                         <li class="splide__slide">
-                            <div class="hero-4 zoom-out"></div>
+                            <div class="hero-5 zoom-out" data-splide-lazy="nearby"></div>
                         </li>
                         <li class="splide__slide">
-                            <div class="hero-5 zoom-out"></div>
+                            <div class="hero-6 zoom-out" data-splide-lazy="nearby"></div>
                         </li>
                         <li class="splide__slide">
-                            <div class="hero-6 zoom-out"></div>
+                            <div class="hero-7 zoom-out" data-splide-lazy="nearby"></div>
                         </li>
                         <li class="splide__slide">
-                            <div class="hero-7 zoom-out"></div>
+                            <div class="hero-8 zoom-out" data-splide-lazy="nearby"></div>
                         </li>
                         <li class="splide__slide">
-                            <div class="hero-8 zoom-out"></div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="hero-9 zoom-out"></div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="hero-10 zoom-out"></div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="hero-11 zoom-out"></div>
+                            <div class="hero-9 zoom-out" data-splide-lazy="nearby"></div>
                         </li>
                         
                     </ul>
@@ -184,21 +183,28 @@
             autoplay:true, 
             pauseOnFocus:false,
             pauseOnHover:false, 
-            interval: 6000,
-            speed: 3000,
+            interval: 7000,
+            speed: 2000,
             rewind: boolean = true,
+            preloadPages: 1,
             arrowPath: string = 'm 16 2 l -1 1 l 14.5 14.6 l -14.5 14.5 l 1 0.9 l 15.531 -15.516 z'
             } ).mount();
 
+            var x = window.matchMedia("(min-width: 900px)")
+            
             splide.on( 'move', function (
-                  newIndex, prevIndex, destIndex
+                newIndex, prevIndex, destIndex
             ) {
-                  jQuery('#hero-slideshow .splide__slide:nth-of-type(' + (destIndex + 1) + ') .zoom-out').css('animation','none')
+                if (x.matches) {
+                jQuery('#hero-slideshow .splide__slide:nth-of-type(' + (destIndex + 1) + ') .zoom-out').css('animation','none')
 
-                  setTimeout(function(){
+                setTimeout(function(){
                         jQuery('#hero-slideshow .splide__slide:nth-of-type(' + (destIndex + 1) + ') div').css('animation', '')
-                  }, 10);    
+                }, 10);    
+            }
             } );
+
+            
         </script>
 
 </html>

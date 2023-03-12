@@ -12,6 +12,18 @@ jQuery(document).ready(function () {
 
     checkScroll();
 
+
+    const scrollTop = () => {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 250, 'swing');
+    }
+    
+    document.getElementById('scroll-btn-container').onclick = e => {
+        e.preventDefault();
+        scrollTop();
+    }
+
 });
 
 
@@ -20,7 +32,9 @@ function checkScroll() {
 
         if (scroll <= 170) {
             jQuery('.scroll-header-container').removeClass("active");
+            jQuery('#scroll-btn-container').removeClass("visible");
         } else {
             jQuery('.scroll-header-container').addClass("active");
+            jQuery('#scroll-btn-container').addClass("visible");
         }
 }
