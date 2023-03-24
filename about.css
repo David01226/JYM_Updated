@@ -100,6 +100,7 @@
               0 4px 4px rgba(0,0,0,0.12), 
               0 8px 8px rgba(0,0,0,0.12),
               0 16px 16px rgba(0,0,0,0.12);
+    opacity: 0.9;
 }
 
 .meet-img-row {
@@ -120,6 +121,7 @@
               0 4px 4px rgba(0,0,0,0.12), 
               0 8px 8px rgba(0,0,0,0.12),
               0 16px 16px rgba(0,0,0,0.12);
+    opacity: 0.9;
 }
 
 .person {
@@ -402,6 +404,7 @@
     .meet-img-row-top img {
         width: 100%;
         margin-top: 30px;
+
     }
 
     .meet-img-row {
@@ -415,6 +418,7 @@
     .meet-img-row img {
         width: 100%;
         margin-top: 30px;
+
     }
     
 }
