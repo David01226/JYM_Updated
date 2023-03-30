@@ -11,8 +11,32 @@
     <link rel="stylesheet" href="contact.css">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="img/global/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/global/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <script type="application/ld+json">
+        {
+            "@context" : "http://schema.org",
+            "@type" : "LocalBusiness",
+            "name" : "JYM Roofing and Property Maintenance",
+            "telephone" : [ "07712 708557", "07913 111867" ],
+            "email" : "jymroofing@gmail.com",
+            "url" : "http://www.jymroofing.co.uk/",
+            "image": "http://www.jymroofing.co.uk/img/global/jymlogo.png",
+            "logo": "http://www.jymroofing.co.uk/img/global/jymlogo.png",
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 50.723560,
+                "longitude": -1.864780
+              },          
+            "sameAs": [
+                "https://www.facebook.com/JYMRoofingandPropertyMaintenance/",
+                "https://www.instagram.com/jymroofing/"
+            ]
+        }
+    </script>
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -183,7 +207,7 @@
                         <h3>REQUEST A CALLBACK</h3>
 
                         <!-- Form -->
-                        <form class="form-wrapper" action="php/contactform.php" method="POST">
+                        <form class="form-wrapper" action="contactform.php" method="POST">
                             <input type="text" id="name" name="name" placeholder="Name...">
                             <input type="text" id="number" name="number" placeholder="Mobile Number...">
                             <select name="timeofday" id="timeofday">
@@ -233,7 +257,7 @@
 
 
         <!-- Partners -->
-        <section class="partners-container">
+        <!-- <section class="partners-container">
             <div class="partners-text">
                 <p>Our Partners</p>
             </div>
@@ -242,9 +266,8 @@
                 <img src="img/global/Image 6.png" alt="">
                 <img src="img/global/Image 2.png" alt="">
                 <img src="img/global/Image 4.png" alt="">
-                <!-- <img src="img/global/Image 5.png" alt=""> -->
             </div>
-        </section>
+        </section> -->
 
         <!-- Footer -->
         <section class="footer-container">

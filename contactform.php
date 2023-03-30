@@ -8,10 +8,10 @@ if (isset($_POST['submit'])) {
     $mailFrom = strval($_POST['email']);  // trying to print full email after the @ symbol ??
     $message = $_POST['message'];
 
-    $mailTo = "davidjohngibson97@gmail.com";
+    $mailTo = "david.gibson@jymroofing.net";
     $subject = "Message from " . $name . " via JYM Website";
-    $headers = "From: ".$mailFrom;
-    $txt = 'Name:' . $name . '. Contact Number: ' . $number . '. Email' . $mailFrom . '. Best time to call: ' . $timeofday . '. Interested in: ' . $service . '. Message: ' . $message;
+    $headers = "From: david.gibson@jymroofing.net";
+    $txt = 'Name: ' . $name . "\n" . 'Contact Number: ' . $number . "\n" . 'Email: ' . $mailFrom . "\n" . 'Best time to call: ' . $timeofday . "\n" . 'Interested in: ' . $service . "\n" .'Message: ' . $message;
 
     mail($mailTo, $subject, $txt, $headers);
     header("Location: submitted.html?mailsend");
