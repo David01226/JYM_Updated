@@ -1,4 +1,4 @@
 <?php
-header("Location: http://www.jymroofing.co.uk/services.html");
+header("Location: https://www.jymroofing.co.uk/services.html");
 die();
 ?>
