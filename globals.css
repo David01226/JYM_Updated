@@ -518,7 +518,7 @@ aside.open {
 .footer-logo {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     height: 100%;
     width: 30%;
@@ -601,8 +601,9 @@ aside.open {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-end;
+    gap: 5px;
 }
 
 .footer-contact-details a {
@@ -1282,11 +1283,9 @@ aside.open {
 
     .footer-contact-details {
         align-items: center;
-        justify-content: flex-start;
     }
 
     .footer-contact-details a {
-        margin-bottom: 10px;
         font-size: 16px;
     }
 
