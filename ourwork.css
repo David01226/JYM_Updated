@@ -42,7 +42,7 @@
     margin-bottom: 100px;
 }
 
-.slideshow-container h3 {
+.slideshow-container h2 {
     margin-bottom: 20px;
     font-size: 28px;
     font-weight: 700;
@@ -135,7 +135,7 @@
         height: 15px !important;
     }
 
-    .slideshow-container h3 {
+    .slideshow-container h2 {
         font-size: 22px;
     }
 
@@ -157,13 +157,13 @@
         background-image: url(img/ourwork/ourwork-hero-mobile.jpg);
         background-size: cover;
     }
-    .slideshow-container h3 {
+    .slideshow-container h2 {
         font-size: 20px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .slideshow-container h3 {
+    .slideshow-container h2 {
         font-size: 18px;
     }
 

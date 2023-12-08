@@ -64,7 +64,7 @@
     align-items: flex-start;
 }
 
-.hero-text-bottom h3 {
+.hero-text-bottom h2 {
     font-size: 50px;
     color: #a59779;
     font-weight: bold;
@@ -169,7 +169,7 @@
         font-size: 140px;
     }
 
-    .hero-text-bottom h3 {
+    .hero-text-bottom h2 {
         font-size: 70px;
     }
     
@@ -185,7 +185,7 @@
         bottom: 6%;
     }
 
-    .hero-text-bottom h3 {
+    .hero-text-bottom h2 {
         font-size: 35px;
     }
     
@@ -202,7 +202,7 @@
         bottom: 6%;
     }
 
-    .hero-text-bottom h3 {
+    .hero-text-bottom h2 {
         font-size: 26px;
     }
     
@@ -218,7 +218,7 @@
         bottom: 6%;
     }
 
-    .hero-text-bottom h3 {
+    .hero-text-bottom h2 {
         font-size: 26px;
     }
 
@@ -270,7 +270,7 @@
         bottom: 15%;
     }
 
-    .hero-text-bottom h3 {
+    .hero-text-bottom h2 {
         font-size: 20px;
     }
     
